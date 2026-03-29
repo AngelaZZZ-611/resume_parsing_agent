@@ -9,9 +9,10 @@ from utils import *
 
 load_dotenv()
 
-JD_PATH = "/Users/anqizhang/Documents/langchain-project/resume_parsing_agent/data/jd.txt"
-RESUMES_DIR = "/Users/anqizhang/Documents/langchain-project/resume_parsing_agent/data/resumes"
-SAVE_PATH = "/Users/anqizhang/Documents/langchain-project/resume_parsing_agent/res"
+# 文件地址，之后也可以写成argparse的形式来传入文件路径（工程优化）
+JD_PATH = "resume_parsing_agent/data/jd.txt"
+RESUMES_DIR = "resume_parsing_agent/data/resumes"
+SAVE_PATH = "resume_parsing_agent/res"
 
 def main():
     # 编译 LangGraph 工作流
