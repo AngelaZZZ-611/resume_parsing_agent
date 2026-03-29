@@ -161,4 +161,4 @@ python src/main.py
 若文本无法解析（比如纯图片/扫描版PDF），当前版本（V1.0）会显示警告如下图所示：
 [示例-文本解析异常警告如图](https://github.com/AngelaZZZ-611/resume_parsing_agent/blob/main/res/%E7%A4%BA%E4%BE%8B-%E6%96%87%E6%9C%AC%E8%A7%A3%E6%9E%90%E5%BC%82%E5%B8%B8%E8%AD%A6%E5%91%8A.png)
 
-所有跳过的简历（无论是文本格式无法解析或者是大模型处理失败），其简历文件名会被统一存入一个Excel中 -- **res/Agent未能处理的简历文件名汇总.xlsx**，方便 HR 知道哪些简历未被Agent成功处理并进行人工处理。
+P.S., 所有跳过的简历（如有，无论是文本格式无法解析或者是大模型处理失败），其简历文件名会被统一存入一个Excel中 -- **res/Agent未能处理的简历文件名汇总.xlsx**，方便 HR 知道哪些简历未被Agent成功处理并进行人工处理。
