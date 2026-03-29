@@ -26,7 +26,8 @@ def main():
     resumes_dir = RESUMES_DIR #"resumes"
     pdf_files =[f for f in os.listdir(resumes_dir) if f.endswith(".pdf")]
     
-    results =[]
+    results = []
+    failed_files = []
     
     for file in pdf_files:
         print(f"\n========== 开始处理: {file} ==========")
@@ -59,6 +60,7 @@ def main():
         # 增加业务拦截：如果 info 真是空的，说明解析彻底失败，直接记录并跳过
         if not info:
             print(f"！ 警告: [{file}] 解析失败或提取文本为空 (可能是图片型PDF或大模型处理异常)，已跳过。")
+            failed_files.append(file)
             continue
 
         ## Save
@@ -118,6 +120,9 @@ def main():
 
         print(f"\n*** 全部处理完成，Excel报表已生成：{output_file} ***")
 
+    # 记录下Agent未能处理的简历文件名，存入Excel
+    if failed_files != []:
+        pd.DataFrame(failed_files).to_excel(f"{SAVE_PATH}/Agent未能处理的简历文件名汇总.xlsx", index=False)
 
 if __name__ == "__main__":
     main()
