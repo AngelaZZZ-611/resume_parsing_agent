@@ -151,12 +151,12 @@ python main.py
 * [ ] **RAG 人才库检索**：将结构化提取后的数据（尤其是工作和项目经历）向量化并存入向量数据库 `Chroma` 或 `Milvus`，支持 HR “用自然语言从库里捞人”（例如：“帮我找一个懂 Python 且有 3 年以上经验的人”）。
 
 
-## [示例]运行显示
+## 🔎 [示例]运行显示
 
 示例简历在 data/resumes/ 文件夹中，示例岗位 JD 见 data/jd.txt。示例简历的解析结果输出见 **res/HR_简历智能解析_完整版.xlsx** （一个Excel表格）。
 
 运行程序（示例）时的显示如下：
-![这是图片](https://github.com/AngelaZZZ-611/resume_parsing_agent/blob/main/res/%E7%A4%BA%E4%BE%8B-%E8%BF%90%E8%A1%8C%E6%98%BE%E7%A4%BA.png =300x200 "示例-运行程序显示")
+[示例-运行程序显示如图](https://github.com/AngelaZZZ-611/resume_parsing_agent/blob/main/res/%E7%A4%BA%E4%BE%8B-%E8%BF%90%E8%A1%8C%E6%98%BE%E7%A4%BA.png)
 
 若文本无法解析（比如纯图片/扫描版PDF），当前版本（V1.0）会显示警告如下图所示：
-![这是图片](https://github.com/AngelaZZZ-611/resume_parsing_agent/blob/main/res/%E7%A4%BA%E4%BE%8B-%E6%96%87%E6%9C%AC%E8%A7%A3%E6%9E%90%E5%BC%82%E5%B8%B8%E8%AD%A6%E5%91%8A.png =300x200 "示例-文本解析异常警告")
+[示例-文本解析异常警告如图](https://github.com/AngelaZZZ-611/resume_parsing_agent/blob/main/res/%E7%A4%BA%E4%BE%8B-%E6%96%87%E6%9C%AC%E8%A7%A3%E6%9E%90%E5%BC%82%E5%B8%B8%E8%AD%A6%E5%91%8A.png)
